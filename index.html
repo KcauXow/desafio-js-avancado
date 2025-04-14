@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafio: Formulário</title>
+
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="texto">
+            <h1 class="titulo">Ficou com dúvida? <br> Nos mande uma Mensagem!</h1>
+
+
+            <p class="paragrafo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                contato
+                em menos d 24h.</p>
+        </div>
+
+        <div class="formulario">
+            <form method="get" action="#">
+
+                <input type="text" name="nome-completo" id="nome" placeholder="Nome Completo *">
+                <p class="alerta alerta-nome">campo obrigatório</p>
+
+                <input type="email" name="email" id="email" placeholder="Email *">
+                <p class="alerta alerta-email">campo obrigatório</p>
+
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone *" pattern="[0-9()\-\s]+"
+                    oninput="this.value = this.value.replace(/[^0-9()\-\s]/g, '')">
+                <p class="alerta alerta-tel">campo obrigatório</p>
+
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                <p class="alerta alerta-mensagem">campo obrigatório</p>
+
+                <p class="aviso">*campos obrigatorios</p>
+
+                <input type="submit" value="Enviar" id="botao">
+
+            </form>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

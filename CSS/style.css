@@ -1,0 +1,162 @@
+body {
+    background: url(/background1/bg-repeat.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+}
+
+main {
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    top: 10vw;
+}
+
+.texto {
+    position: relative;
+
+    width: 300px;
+    height: 111px;
+    font-family: "Roboto", sans-serif;
+    right: 60px;
+}
+
+.texto .titulo {
+    margin-bottom: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.texto .paragrafo {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario {
+    display: flex;
+
+    background-color: #fff;
+    width: 340px;
+    height: 378px;
+}
+
+.formulario #nome,
+#email,
+#telefone,
+#mensagem {
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+
+    position: relative;
+    left: 20px;
+    top: 20px;
+    margin-bottom: 15px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario #mensagem {
+    height: 100px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.formulario input::placeholder {
+    color: #A8A8A8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.formulario #mensagem::placeholder {
+    color: #A8A8A8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+}
+
+.formulario .aviso {
+    font-family: "Roboto", "sans-serif";
+    font-size: 15px;
+    font-weight: 500;
+
+    position: relative;
+    width: 145px;
+    height: 36px;
+    top: 25px;
+    left: 20px;
+
+    cursor: default;
+
+}
+
+.formulario #botao {
+    position: relative;
+    width: 298px;
+    height: 41px;
+    top: 15px;
+    left: 19px;
+
+    color: #fff;
+
+    border-radius: 5px;
+    border: none;
+    background-color: #3CCC87;
+
+    cursor: pointer;
+}
+
+/* Preenchido */
+
+.formulario #nome.preenchido,
+#email.preenchido,
+#telefone.preenchido,
+#mensagem.preenchido {
+    border-color: #00C22B;
+}
+
+/* Alerta de Erro */
+
+.formulario .alerta {
+    display: none;
+
+    color: #f52e2e;
+
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 8px;
+
+    position: relative;
+    left: 20px;
+    top: 5px;
+
+    width: 66px;
+    height: 9px;
+}
+
+.formulario .alerta.alerta-mensagem {
+    top: 1px;
+}
+
+.formulario #email.erro,
+#telefone.erro,
+#mensagem.erro,
+#nome.erro {
+    border-color: #f52e2e;
+}
