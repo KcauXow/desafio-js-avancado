@@ -1,4 +1,4 @@
-# Desafio JS Avançado
+# Desafio JS Intermediario
 ### HTML + CSS + JS
 
 ## Duvida
